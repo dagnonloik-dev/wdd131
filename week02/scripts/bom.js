@@ -30,9 +30,10 @@ btn.addEventListener("click", function(){
             let isValidFormat = false;
             let validateBook = false;
             for(let i = 0; i < bookOfMormonBooks.length; i++){
+                
                 isValidFormat = input.value.toLowerCase().startsWith(bookOfMormonBooks[i].toLowerCase()) 
                 if(isValidFormat){
-                    validateBook = isValidFormat;
+                    validateBook = true;
                     break;
                 }
             }

@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+main figure figcaption {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #555;
+    margin: 5px auto;
+}
+
+/* Mobile view */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color:#fff;
+    margin: 0 auto;
+    padding: 1rem;
+    width: 100%;
+}
+
+nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333;
+    width: 100%;
+}
+
+nav li {
+    display: none;
+}
+
+#menu {
+    font-size: 1.8rem;
+    cursor: pointer;
+    font-weight: 800;
+    color: #fff;
+    text-decoration: none;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu a:hover {
+    cursor: pointer;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+main .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap:1rem;
+    margin: 1rem auto;
+}
+
+main h1{
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.show li {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+#menu.show::before {
+    content: "✖";
+}
+
+header h1.show {
+    display: none;
+}
+
+nav.show {
+    display: block;
+    align-items: center;
+}
+
+nav li a {
+    margin-left: 0;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+footer {
+    display: block;
+    text-align: center;
+    height: 100px;
+    color:#fff;
+    background-color:rgb(2, 43, 57);
+    margin-top: 20px;
+    padding-top: 15px;
+    font-size: 18px;
+}
+
+footer #lastModified{
+    color: yellow;
+    margin-top: 0.5rem;
+}
