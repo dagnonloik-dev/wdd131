@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color:#fff;
+    margin: 0 auto;
+    padding: 1rem;
+} 
+
+main {
+    width: 100%;
+    margin: 60px auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto;
+}
+
+main .hero picture {
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+main .hero picture img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+main section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding: 20px;
+    width: 100%;
+}
+
+main section h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+    background-color: #f0f0f0;
+    padding: 1rem 3.5rem;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+main section dl {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+    margin-bottom: 10px;
+}
+
+main section dl dt {
+    font-weight: bold;
+    color: #333;
+}
+/* footer */
+
+footer {
+    display:block;
+    text-align: center;
+    height: 100px;
+    color:#fff;
+    background-color:rgb(4, 57, 77);
+    margin: 0 auto;
+    padding-top: 15px;
+    font-size: 18px;
+}
+
+footer #lastModified{
+    color: yellow;
+}

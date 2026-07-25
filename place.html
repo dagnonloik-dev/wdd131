@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sample page about Amazone Place in BENIN">
+    <meta name="author" content="DAGNON LOIK SOUROU KPADONOU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <title>Amazone Place</title>
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/windchill.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>AMAZONE'S PLACE</h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 1000px)" srcset="images/amazone_large.webp">
+                <source media="(min-width: 500px)" srcset="images/amazone_medium.webp">
+                <img src="images/amazone_small.webp" alt="Benin Amazon" width="500" height="250">
+            </picture>
+        </div>
+
+        <section class="data">
+            <h2>Data</h2>
+            <dl>
+                
+                    <dt>Area:</dt>
+                    <dd id="area"></dd>
+                
+                    <dt>Population:</dt>
+                    <dd id="population"></dd>
+            
+                    <dt>Capital:</dt>
+                    <dd id="capital"></dd>
+                
+                    <dt>Languages:</dt>
+                    <dd id="languages"></dd>
+
+                    <dt>Currency:</dt>
+                    <dd id="currency"></dd>
+
+                    <dt>Time Zone:</dt>
+                    <dd id="timeZone"></dd>
+
+                    <dt>Calling Code:</dt>
+                    <dd id="callingCode"></dd>
+
+                    <dt>Internet TLD:</dt>
+                    <dd id="internetTLD"></dd>
+            </dl>
+        </section>
+
+        <section class="weather">
+            <h2>Weather</h2>
+            <img src="images/sun_icon.png" alt="sun icon">
+            <dl>
+                <dt>Temperature:</dt>
+                <dd id="temperature"></dd>
+
+                <dt>Conditions:</dt>
+                <dd id="conditions"></dd>
+
+                <dt>Wind:</dt>
+                <dd id="wind"></dd>
+
+                <dt>Wind Chill:</dt>
+                <dd id="windChill"></dd>
+            </dl>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> -- Dagnon Loik Sourou Kpadonou -- Benin</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

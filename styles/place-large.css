@@ -1,0 +1,70 @@
+@media screen and (min-width: 768px) {
+    main {
+        position : relative;
+        width: 100%;
+        min-height: 850px;
+        margin-bottom: 20px;
+    }
+
+    main .hero {
+        inset: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+    }
+
+    main .hero picture {
+        width: 100%;
+        aspect-ratio: 16/9;
+    }
+
+    main .hero picture img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    main section {
+        position : absolute;
+        padding: 20px;
+        z-index: 2;
+        width: 30%;
+        height: auto;
+    }
+
+    main section h2,
+    main section dl,
+    main section dt{
+        font-size: 0.7rem;
+    }
+
+    main .data{
+        top: 20px;
+        left: 20px;
+    }
+
+    main .weather{
+        content: "";
+        bottom: 20px;
+        right: 20px;
+    }
+
+    main .weather img{
+        display: none;
+    }
+
+    main .weather h2::after{
+        content: "☀️";
+        margin-left: 8px;
+        width: 50px;
+        height: 50px;
+        background-position: center;
+    }
+
+    footer {
+        position: relative;
+        margin-top: 20px;
+    }
+}
