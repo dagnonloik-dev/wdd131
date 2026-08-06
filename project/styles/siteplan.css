@@ -1,0 +1,187 @@
+/* ===========================
+   Travel Benin Site Plan
+   WDD 131
+=========================== */
+
+/* ---------- Root Colors ---------- */
+:root {
+    --primary-color: #2E8B57;
+    --secondary-color: #F4F1DE;
+    --accent-color: #E76F51;
+    --text-color: #333333;
+    --white: #ffffff;
+    --border-color: #d9d9d9;
+}
+
+/* ---------- Reset ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------- Body ---------- */
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* ---------- Header ---------- */
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.logo h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: .5rem;
+}
+
+.logo p {
+    font-size: 1.1rem;
+}
+
+/* ---------- Main ---------- */
+main {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* ---------- Cards ---------- */
+.card {
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 3px 10px rgba(0,0,0,.1);
+}
+
+.card h2 {
+    font-family: "Poppins", sans-serif;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.card h3 {
+    font-family: "Poppins", sans-serif;
+    margin-bottom: .75rem;
+}
+
+.card p,
+.card li {
+    margin-bottom: .8rem;
+}
+
+.card ul {
+    padding-left: 1.5rem;
+}
+
+/* ---------- Color Schema ---------- */
+.color-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+.color-box {
+    padding: 1rem;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+}
+
+.green {
+    background: #2E8B57;
+}
+
+.beige {
+    background: #F4F1DE;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+.orange {
+    background: #E76F51;
+}
+
+/* ---------- Typography ---------- */
+.heading-font {
+    font-family: "Poppins", sans-serif;
+    color: var(--primary-color);
+}
+
+.body-font {
+    font-family: "Roboto", sans-serif;
+    color: var(--accent-color);
+}
+
+/* ---------- Wireframes ---------- */
+.wireframes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+}
+
+.wireframe {
+    background-color: #fafafa;
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.wireframe h3 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+pre {
+    font-family: monospace;
+    white-space: pre-wrap;
+    overflow-x: auto;
+}
+
+/* ---------- Footer ---------- */
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 1.2rem;
+    margin-top: 2rem;
+}
+
+/* ---------- Links ---------- */
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+
+    .logo h1 {
+        font-size: 2rem;
+    }
+
+    .card {
+        padding: 1.2rem;
+    }
+
+    .wireframes {
+        grid-template-columns: 1fr;
+    }
+
+    .color-grid {
+        grid-template-columns: 1fr;
+    }
+}
