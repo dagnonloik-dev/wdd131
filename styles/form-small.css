@@ -92,3 +92,10 @@ footer{
 footer p{
   margin-top: .5rem;
 }
+
+@media (max-width: 600px){
+  .review-form{
+    width: 90%;
+    padding: 15px;
+  }
+}
