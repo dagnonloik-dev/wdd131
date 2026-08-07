@@ -1,0 +1,94 @@
+*{
+  margin: 0;
+  padding: 0;  
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f5f5;
+}
+
+header{
+  background-color: #2b5c2c;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.review-form{
+  width: 100%;
+  max-width: 400px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.review-form label{
+  display: block;
+  margin-bottom: 5px;
+}
+
+.review-form input[type="text"],
+.review-form textarea{
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: .9rem;
+}
+
+.review-form textarea,
+.review-form input[type="text"],
+.review-form input[type="date"],
+.review-form select{
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+}
+
+.review-form textarea{
+  height: 100px;
+  resize: none;
+}
+
+.review-form span{
+    color: rgb(31, 40, 167);
+}
+
+.review-form input[type="submit"]{
+  padding: 10px 20px;
+  background-color: #2b5c2c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.review-form input[type="date"]{
+  display: block;
+}
+
+.review-form div{
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.review-form .written-review{
+  margin-top: 15px;
+}
+
+footer{
+  background-color: #2b5c2c;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+footer p{
+  margin-top: .5rem;
+}

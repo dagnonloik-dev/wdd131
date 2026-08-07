@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a product review form where users can submit their reviews for various products.">
+    <meta name="author" content="DAGNON LOIK SOUROU KPADONOU">
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="styles/form-small.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/product.js" defer></script>   
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form method="get" action="review.html" class="review-form">
+            <label>Product Name
+                <select name="product" id="product" required>
+                    <option value="" disabled selected>Select a Product</option>
+                </select>
+            </label>
+
+            <div class="">Overall Rating</div>
+            <label><input type="radio" name="rating" id="rating1" value="1" required> &star; </label>
+            <label><input type="radio" name="rating" id="rating2" value="2" required> &star;&star;</label>
+            <label><input type="radio" name="rating" id="rating3" value="3" required> &star;&star;&star;</label>
+            <label><input type="radio" name="rating" id="rating4" value="4" required> &star;&star;&star;&star;</label>
+            <label><input type="radio" name="rating" id="rating5"  value="5" required> &star;&star;&star;&star;&star;</label>
+
+            <label>Date of Installation<input type="date" name="installationDate" id="installationDate" required></label>
+
+            <div class="">
+                Which features did you find useful in the product?
+                (Check all that apply)
+            </div>
+            <label><input type="checkbox" name="features" id="feature1" value="Durability"> Durability</label>
+            <label><input type="checkbox" name="features" id="feature2" value="Ease of Use"> Ease of Use</label>
+            <label><input type="checkbox" name="features" id="feature3" value="Performance"> Performance</label>
+            <label><input type="checkbox" name="features" id="feature4" value="Design"> Design</label>
+
+            <label class="written-review">
+                Written Review <span>(Optional)</span><textarea name="comments" id="comments"></textarea>
+            </label>
+
+            <label>Your Name <span>(Optional)</span><input type="text" name="name" id="name"></label>
+
+            <input type="submit" value="Post Review">  
+        </form>    
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> -- Dagnon Loik Sourou Kpadonou -- Benin</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
