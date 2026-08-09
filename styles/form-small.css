@@ -16,6 +16,12 @@ header{
   text-align: center;
 }
 
+form h2{
+  color:  rgb(109, 8, 8);
+  font-size: .8rem;
+  margin-bottom: .5rem;
+}
+
 .review-form{
   width: 100%;
   max-width: 400px;
@@ -79,6 +85,20 @@ header{
 
 .review-form .written-review{
   margin-top: 15px;
+}
+
+.form-label{
+  color: rgb(109, 8, 8);
+}
+
+input:required,
+select:required {
+  border-left: 6px solid rgb(103, 16, 16);
+}
+
+input:required:valid,
+select:required:valid {
+  border-left: 6px solid green;
 }
 
 footer{
