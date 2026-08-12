@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Confirmation page for your Travel Benin trip planning request."
+    >
+
+    <meta
+        name="author"
+        content="DAGNON LOIK SOUROU KPADONOU"
+    >
+
+    <title>Travel Benin | Trip Confirmation</title>
+
+    <link rel="stylesheet" href="styles/review.css">
+    <script src="scripts/review.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html">Travel Benin</a>
+        </div>
+
+        <nav aria-label="Main navigation">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="destinations.html">Destinations</a>
+                </li>
+
+                <li>
+                    <a href="plan.html">Plan Your Trip</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section class="confirmation">
+
+            <h1>Thank You for Planning Your Trip!</h1>
+
+            <p>
+                Your trip information has been successfully submitted.
+            </p>
+
+
+            <div class="trip-result">
+
+                <h2>Your Trip Details</h2>
+
+                <p>
+                    <strong>Name:</strong>
+                    <span id="review-name"></span>
+                </p>
+
+                <p>
+                    <strong>Email:</strong>
+                    <span id="review-email"></span>
+                </p>
+
+                <p>
+                    <strong>Destination:</strong>
+                    <span id="review-destination"></span>
+                </p>
+
+                <p>
+                    <strong>Travel Date:</strong>
+                    <span id="review-date"></span>
+                </p>
+
+                <p>
+                    <strong>Number of Travelers:</strong>
+                    <span id="review-travelers"></span>
+                </p>
+
+                <p>
+                    <strong>Interests:</strong>
+                    <span id="review-interests"></span>
+                </p>
+
+                <p>
+                    <strong>Comments:</strong>
+                    <span id="review-comments"></span>
+                </p>
+
+            </div>
+
+
+            <div class="review-count">
+
+                <h2>Travel Plans Completed</h2>
+
+                <p>
+                    You have completed
+                    <strong id="review-count">0</strong>
+                    travel plan(s).
+                </p>
+
+            </div>
+
+
+            <div class="confirmation-actions">
+
+                <a href="destinations.html">
+                    Explore More Destinations
+                </a>
+
+                <a href="plan.html">
+                    Plan Another Trip
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span>
+            Travel Benin
+            | Dagnon Loik Sourou Kpadonou
+            | Benin
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

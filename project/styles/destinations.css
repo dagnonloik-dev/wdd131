@@ -1,0 +1,344 @@
+
+:root {
+    --primary-color: #2e8b57;
+    --secondary-color: #f4f1de;
+    --accent-color: #c94c32;
+    --dark-color: #222222;
+    --white-color: #ffffff;
+    --light-gray: #f5f5f5;
+    --border-color: #cccccc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: var(--dark-color);
+    background-color: var(--secondary-color);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Poppins", sans-serif;
+    line-height: 1.2;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    color: var(--white-color);
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: var(--white-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover,
+nav a.active {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+main {
+    flex: 1;
+}
+
+.destination-introduction {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 3rem 1rem 2rem;
+    text-align: center;
+}
+
+.destination-introduction h1 {
+    color: var(--primary-color);
+    font-size: 2.7rem;
+    margin-bottom: 1rem;
+}
+
+.destination-introduction p {
+    font-size: 1.1rem;
+}
+
+.destination-tools {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: var(--white-color);
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: end;
+}
+
+.destination-tools h2 {
+    grid-column: 1 / -1;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.search-box,
+.filter-box {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.search-box label,
+.filter-box label {
+    font-weight: 600;
+}
+
+.search-box input,
+.filter-box select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #777777;
+    border-radius: 5px;
+    background-color: var(--white-color);
+    color: var(--dark-color);
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+}
+
+.search-box input:focus,
+.filter-box select:focus {
+    outline: 3px solid rgba(46, 139, 87, 0.35);
+    border-color: var(--primary-color);
+}
+
+.destinations {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 1rem;
+}
+
+.destinations > h2 {
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.destination-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.destination-card {
+    background-color: var(--white-color);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.destination-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+}
+
+.destination-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.destination-card-content {
+    padding: 1.5rem;
+}
+
+.destination-card-content h3 {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.destination-category {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: var(--dark-color);
+    padding: 0.25rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+}
+
+.destination-card-content p {
+    margin-bottom: 1rem;
+}
+
+.destination-card-content a {
+    color: var(--accent-color);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.destination-card-content a:hover {
+    text-decoration: underline;
+}
+
+.no-results {
+    text-align: center;
+    background-color: var(--white-color);
+    padding: 2rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+    font-weight: 600;
+}
+
+
+.destination-cta {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+.destination-cta h2 {
+    color: var(--white-color);
+    margin-bottom: 1rem;
+}
+
+.destination-cta p {
+    margin-bottom: 1.5rem;
+}
+
+.destination-cta a {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.destination-cta a:hover {
+    background-color: #a83b27;
+}
+
+.destination-cta a:focus {
+    outline: 3px solid var(--white-color);
+    outline-offset: 3px;
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: auto;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
+
+footer a {
+    color: var(--white-color);
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: var(--secondary-color);
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .destination-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .destination-tools {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .destination-introduction {
+        padding: 2rem 1rem;
+    }
+
+    .destination-introduction h1 {
+        font-size: 2.2rem;
+    }
+
+    .destination-tools {
+        grid-template-columns: 1fr;
+        padding: 1.5rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .destination-tools h2 {
+        grid-column: auto;
+    }
+
+    .destination-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .destination-card img {
+        height: 200px;
+    }
+
+    .destinations {
+        padding: 3rem 1rem;
+    }
+}

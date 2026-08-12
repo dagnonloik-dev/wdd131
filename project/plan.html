@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Plan your trip to Benin by choosing a destination, travel date, interests, and number of travelers."
+    >
+
+    <meta
+        name="author"
+        content="DAGNON LOIK SOUROU KPADONOU"
+    >
+
+    <title>Travel Benin | Plan Your Trip</title>
+
+    <link rel="stylesheet" href="styles/plan.css">
+    <script src="scripts/travel.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html">Travel Benin</a>
+        </div>
+
+        <nav aria-label="Main navigation">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="destinations.html">Destinations</a>
+                </li>
+
+                <li>
+                    <a href="plan.html" class="active">Plan Your Trip</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- Page Introduction -->
+        <section class="page-introduction">
+            <h1>Plan Your Trip</h1>
+
+            <p>
+                Plan your visit to Benin by providing information
+                about your travel preferences.
+            </p>
+        </section>
+
+
+        <!-- Trip Planning Form -->
+        <section class="trip-planning">
+
+            <h2>Trip Planning Form</h2>
+
+            <form
+                method="get"
+                action="review.html"
+                class="trip-form"
+            >
+
+                <!-- Personal Information -->
+                <fieldset>
+
+                    <legend>Personal Information</legend>
+
+                    <label for="name">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        autocomplete="name"
+                        required
+                    >
+
+
+                    <label for="email">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        autocomplete="email"
+                        required
+                    >
+
+                </fieldset>
+
+
+                <!-- Trip Information -->
+                <fieldset>
+
+                    <legend>Trip Information</legend>
+
+                    <label for="destination">
+                        Choose a Destination
+                    </label>
+
+                    <select
+                        id="destination"
+                        name="destination"
+                        required
+                    >
+                        <option value="" disabled selected>
+                            Select a destination
+                        </option>
+
+                        <option value="ganvie">
+                            Ganvié
+                        </option>
+
+                        <option value="ouidah">
+                            Ouidah
+                        </option>
+
+                        <option value="pendjari">
+                            Pendjari National Park
+                        </option>
+
+                        <option value="grand-popo">
+                            Grand-Popo
+                        </option>
+
+                        <option value="abomey">
+                            Abomey
+                        </option>
+
+                        <option value="porto">
+                            Porto Novo
+                        </option>
+
+                        <option value="natitingou">
+                            Natitingou
+                        </option>
+
+                        <option value="routes esclavages">
+                            Routes Esclavages
+                        </option>
+                    </select>
+
+
+                    <label for="travelDate">
+                        Travel Date
+                    </label>
+
+                    <input
+                        type="date"
+                        id="travelDate"
+                        name="travelDate"
+                        required
+                    >
+
+
+                    <label for="travelers">
+                        Number of Travelers
+                    </label>
+
+                    <input
+                        type="number"
+                        id="travelers"
+                        name="travelers"
+                        min="1"
+                        max="20"
+                        value="1"
+                        required
+                    >
+
+                </fieldset>
+
+
+                <!-- Travel Interests -->
+                <fieldset>
+
+                    <legend>
+                        What are you interested in?
+                    </legend>
+
+                    <label for="culture">
+                        <input
+                            type="checkbox"
+                            id="culture"
+                            name="interests"
+                            value="culture"
+                        >
+                        Culture
+                    </label>
+
+
+                    <label for="history">
+                        <input
+                            type="checkbox"
+                            id="history"
+                            name="interests"
+                            value="history"
+                        >
+                        History
+                    </label>
+
+
+                    <label for="nature">
+                        <input
+                            type="checkbox"
+                            id="nature"
+                            name="interests"
+                            value="nature"
+                        >
+                        Nature
+                    </label>
+
+
+                    <label for="beach">
+                        <input
+                            type="checkbox"
+                            id="beach"
+                            name="interests"
+                            value="beach"
+                        >
+                        Beaches
+                    </label>
+
+                </fieldset>
+
+
+                <!-- Additional Information -->
+                <fieldset>
+
+                    <legend>Additional Information</legend>
+
+                    <label for="comments">
+                        Additional Comments
+                        <span>(Optional)</span>
+                    </label>
+
+                    <textarea
+                        id="comments"
+                        name="comments"
+                        rows="5"
+                        placeholder="Tell us about your travel preferences..."
+                    ></textarea>
+
+                </fieldset>
+
+
+                <!-- Submit -->
+                <button type="submit">
+                    Plan My Trip
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            &copy; <span id="currentyear"></span>
+            Travel Benin
+            | Dagnon Loik Sourou Kpadonou
+            | Benin
+        </p>
+
+        <p id="lastModified"></p>
+
+    </footer>
+
+</body>
+</html>

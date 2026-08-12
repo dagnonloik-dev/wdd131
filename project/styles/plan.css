@@ -1,0 +1,489 @@
+/* =========================================
+   TRAVEL BENIN - PLAN YOUR TRIP
+   WDD 131 FINAL PROJECT
+========================================= */
+
+
+/* =========================================
+   COLOR VARIABLES
+========================================= */
+
+:root {
+    --primary-color: #2e8b57;
+    --secondary-color: #f4f1de;
+    --accent-color: #c94c32;
+    --dark-color: #222222;
+    --white-color: #ffffff;
+    --light-gray: #f5f5f5;
+    --border-color: #cccccc;
+}
+
+
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   BODY
+========================================= */
+
+body {
+    font-family: "Roboto", sans-serif;
+    color: var(--dark-color);
+    background-color: var(--secondary-color);
+    line-height: 1.6;
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* =========================================
+   HEADINGS
+========================================= */
+
+h1,
+h2,
+h3 {
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+header {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+
+    padding: 1rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    color: var(--white-color);
+    text-decoration: none;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+nav ul {
+    list-style: none;
+
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: var(--white-color);
+    text-decoration: none;
+
+    font-weight: 500;
+}
+
+nav a:hover,
+nav a.active {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   MAIN
+========================================= */
+
+main {
+    flex: 1;
+}
+
+
+/* =========================================
+   PAGE INTRODUCTION
+========================================= */
+
+.page-introduction {
+    text-align: center;
+    padding: 3rem 1rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.page-introduction h1 {
+    color: var(--primary-color);
+
+    font-size: 2.5rem;
+
+    margin-bottom: 1rem;
+}
+
+.page-introduction p {
+    font-size: 1.1rem;
+}
+
+
+/* =========================================
+   TRIP PLANNING SECTION
+========================================= */
+
+.trip-planning {
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    padding: 1rem 1rem 4rem;
+}
+
+.trip-planning h2 {
+    color: var(--primary-color);
+
+    text-align: center;
+
+    margin-bottom: 2rem;
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.trip-form {
+    background-color: var(--white-color);
+
+    padding: 2rem;
+
+    border-radius: 10px;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================
+   FIELDSET
+========================================= */
+
+fieldset {
+    border: 1px solid var(--border-color);
+
+    border-radius: 6px;
+
+    padding: 1.5rem;
+
+    margin-bottom: 2rem;
+}
+
+legend {
+    color: var(--primary-color);
+
+    font-family: "Poppins", sans-serif;
+
+    font-weight: 600;
+
+    padding: 0 0.5rem;
+}
+
+
+/* =========================================
+   LABELS
+========================================= */
+
+.trip-form > fieldset > label:not([for="culture"]):not([for="history"]):not([for="nature"]):not([for="beach"]) {
+    display: block;
+
+    font-weight: 600;
+
+    margin-bottom: 0.4rem;
+}
+
+
+/* =========================================
+   TEXT INPUTS
+========================================= */
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+
+    padding: 0.75rem;
+
+    margin-bottom: 1.3rem;
+
+    border: 1px solid #777777;
+
+    border-radius: 5px;
+
+    background-color: var(--white-color);
+
+    color: var(--dark-color);
+
+    font-family: "Roboto", sans-serif;
+
+    font-size: 1rem;
+}
+
+
+/* =========================================
+   INPUT FOCUS
+========================================= */
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+    outline: 3px solid rgba(46, 139, 87, 0.35);
+
+    border-color: var(--primary-color);
+}
+
+
+/* =========================================
+   CHECKBOXES
+========================================= */
+
+fieldset label[for="culture"],
+fieldset label[for="history"],
+fieldset label[for="nature"],
+fieldset label[for="beach"] {
+    display: block;
+
+    margin-bottom: 0.8rem;
+
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    width: 1rem;
+    height: 1rem;
+
+    margin-right: 0.5rem;
+
+    accent-color: var(--primary-color);
+}
+
+
+/* =========================================
+   TEXTAREA
+========================================= */
+
+textarea {
+    resize: vertical;
+
+    min-height: 120px;
+}
+
+
+/* =========================================
+   OPTIONAL TEXT
+========================================= */
+
+label span {
+    font-weight: 400;
+
+    font-size: 0.9rem;
+
+    color: #555555;
+}
+
+
+/* =========================================
+   SUBMIT BUTTON
+========================================= */
+
+.trip-form button {
+    display: block;
+
+    width: 100%;
+
+    padding: 0.9rem;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background-color: var(--accent-color);
+
+    color: var(--white-color);
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 1rem;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.trip-form button:hover {
+    background-color: #a83b27;
+}
+
+.trip-form button:focus {
+    outline: 3px solid #222222;
+
+    outline-offset: 3px;
+}
+
+
+/* =========================================
+   TRIP SUMMARY
+========================================= */
+
+.trip-summary {
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    padding: 0 1rem 4rem;
+}
+
+.trip-summary h2 {
+    color: var(--primary-color);
+
+    text-align: center;
+
+    margin-bottom: 1rem;
+}
+
+#trip-summary {
+    background-color: var(--white-color);
+
+    border-left: 5px solid var(--primary-color);
+
+    padding: 1.5rem;
+
+    border-radius: 5px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    background-color: var(--dark-color);
+
+    color: var(--white-color);
+
+    text-align: center;
+
+    padding: 1.5rem;
+
+    margin-top: auto;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
+
+footer a {
+    color: var(--white-color);
+
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: var(--secondary-color);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+
+        gap: 1rem;
+
+        text-align: center;
+    }
+
+    nav ul {
+        gap: 1rem;
+    }
+
+    .page-introduction h1 {
+        font-size: 2.2rem;
+    }
+
+    .trip-form {
+        padding: 1.5rem;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    header {
+        padding: 1rem 0.5rem;
+    }
+
+    .logo a {
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 0.4rem;
+    }
+
+    .page-introduction {
+        padding: 2rem 1rem 1rem;
+    }
+
+    .page-introduction h1 {
+        font-size: 2rem;
+    }
+
+    .trip-planning {
+        padding: 1rem 0.75rem 3rem;
+    }
+
+    .trip-form {
+        padding: 1rem;
+    }
+
+    fieldset {
+        padding: 1rem;
+    }
+
+    legend {
+        font-size: 1rem;
+    }
+}

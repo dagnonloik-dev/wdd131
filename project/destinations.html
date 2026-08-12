@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Explore the best cultural, historical, natural, and coastal destinations in Benin."
+    >
+
+    <meta
+        name="author"
+        content="DAGNON LOIK SOUROU KPADONOU"
+    >
+
+    <title>Travel Benin | Destinations</title>
+
+    <link rel="stylesheet" href="styles/destinations.css">
+    <script src="scripts/destinations.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            <a href="index.html">Travel Benin</a>
+        </div>
+
+        <nav aria-label="Main navigation">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="destinations.html" class="active">
+                        Destinations
+                    </a>
+                </li>
+
+                <li>
+                    <a href="plan.html">
+                        Plan Your Trip
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- Page Introduction -->
+        <section class="destination-introduction">
+
+            <h1>Explore Benin</h1>
+
+            <p>
+                Discover the cultural, historical, natural, and coastal
+                destinations that make Benin a unique place to visit.
+            </p>
+
+        </section>
+
+
+        <!-- Search and Filter -->
+        <section class="destination-tools">
+
+            <h2>Find a Destination</h2>
+
+            <div class="search-box">
+
+                <label for="search">
+                    Search destinations
+                </label>
+
+                <input
+                    type="search"
+                    id="search"
+                    name="search"
+                    placeholder="Search by destination name..."
+                    autocomplete="off"
+                >
+
+            </div>
+
+
+            <div class="filter-box">
+
+                <label for="category">
+                    Filter by category
+                </label>
+
+                <select id="category" name="category">
+
+                    <option value="all">
+                        All Destinations
+                    </option>
+
+                    <option value="culture">
+                        Culture
+                    </option>
+
+                    <option value="history">
+                        History
+                    </option>
+
+                    <option value="nature">
+                        Nature
+                    </option>
+
+                    <option value="beach">
+                        Beach
+                    </option>
+
+                </select>
+
+            </div>
+
+        </section>
+
+
+        <!-- Destinations -->
+        <section class="destinations">
+
+            <h2>Our Destinations</h2>
+
+            <div
+                id="destination-list"
+                class="destination-grid"
+            >
+                <!-- JavaScript will generate destination cards here -->
+            </div>
+
+            <p
+                id="no-results"
+                class="no-results"
+                hidden
+            >
+                No destinations match your search.
+            </p>
+
+        </section>
+
+
+        <!-- Call to Action -->
+        <section class="destination-cta">
+
+            <h2>Ready to Explore Benin?</h2>
+
+            <p>
+                Choose your favorite destination and start planning
+                your trip.
+            </p>
+
+            <a href="plan.html">
+                Plan Your Trip
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            &copy; <span id="currentyear"></span>
+            Travel Benin
+            | Dagnon Loik Sourou Kpadonou
+            | Benin
+        </p>
+
+        <p id="lastModified"></p>
+
+    </footer>
+
+</body>
+</html>
